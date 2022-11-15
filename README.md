@@ -9,7 +9,7 @@ There are two files:
 
 ## Submission
 
-You will be expected to submit two files, as directed in the prompt. One will be your JavaScript source code, and one is your README. Instructions for how to name and submit your work are in the prompt. 
+You will be expected to submit two files, as directed in the prompt. One will be your JavaScript source code, and one is your thought process document. Instructions for how to name and submit your work are in the prompt. 
 
 ## Evaluation
 
