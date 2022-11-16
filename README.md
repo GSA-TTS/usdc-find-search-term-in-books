@@ -25,7 +25,7 @@ Either should work; we tested under both on Mac and Linux.
 
 Directions for submission are in the prompt. As a reminder, you should commit your code to a repository called
 
-`*firstnamelastname*-corps-2022`
+*firstnamelastname*-corps-2022
 
 If you were a remarkable author, you might name your repository
 
