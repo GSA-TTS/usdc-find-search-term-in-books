@@ -11,7 +11,7 @@ There are four files in this repository:
 
 ## Testing your code
 
-You will need to test your code in a browser, and see the output in the web developer console. Here is documentation for opening the web developer tools from the Mozilla team for Firefox.
+You will need to test your code in a browser and see the output in the web developer console. Here is documentation for opening the web developer tools from the Mozilla team for Firefox:
 
 https://firefox-source-docs.mozilla.org/devtools-user/browser_console/index.html#:~:text=You%20can%20open%20the%20Browser,%2B%20J%20on%20a%20Mac
 
