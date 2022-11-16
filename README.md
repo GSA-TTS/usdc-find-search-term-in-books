@@ -35,7 +35,4 @@ or
 
 `mariebrown-usdc-2022`
 
-Additional directions are in the prompt.
-## Evaluation
-
-We will load your code into an environment that is equivalent to the `tester.html` file.
+You, of course, should name your repository for the remarkable technologist of civic tech's future that you are.
