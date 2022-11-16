@@ -12,10 +12,11 @@
 
 /**
  * Searches for matches in scanned text.
- * @param {JSON} input - The input scanned text.
+ * @param {string} searchTerm - The word or term we're searching for. 
+ * @param {JSON} scannedTextObj - A JSON object representing the scanned text.
  * @returns {JSON} - Search results.
  * */ 
-function findKeyWordInBook(scannedTextObj) {
+ function findSearchTermInBooks(searchTerm, scannedTextObj) {
     /** You will need to implement your search and 
      * return the appropriate object here. */
 
@@ -70,18 +71,18 @@ const twentyLeaguesOut = {
 }
 
 /** We can check that, given a known input, we get a known output. */
-test1result = findKeyWordInBook(twentyLeaguesIn);
-if (twentyLeaguesOut == test1result) {
+const test1result = findSearchTermInBooks("the", twentyLeaguesIn);
+if (JSON.stringify(twentyLeaguesOut) === JSON.stringify(test1result)) {
     console.log("Test 1 SUCCESS");
 } else {
     console.log("Test 1 FAIL");
     console.log("Expected:", twentyLeaguesOut);
-    console.log("Received: ", test1result);
+    console.log("Received:", test1result);
 }
 
 /** We could choose to check that we get the right number of results. */
-test2result = findKeyWordInBook(twentyLeaguesIn); 
-if (test2result.Results.length == 2) {
+const test2result = findSearchTermInBooks("the", twentyLeaguesIn); 
+if (test2result.Results.length == 1) {
     console.log("Test 2 SUCCESS");
 } else {
     console.log("Test 2 FAIL");
