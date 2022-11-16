@@ -60,11 +60,6 @@ const twentyLeaguesOut = {
         {
             "ISBN": "9780000528531",
             "Page": 31,
-            "Line": 8
-        },
-        {
-            "ISBN": "9780000528531",
-            "Page": 31,
             "Line": 9
         }
     ]
@@ -73,9 +68,9 @@ const twentyLeaguesOut = {
 /** We can check that, given a known input, we get a known output. */
 const test1result = findSearchTermInBooks("the", twentyLeaguesIn);
 if (JSON.stringify(twentyLeaguesOut) === JSON.stringify(test1result)) {
-    console.log("Test 1 SUCCESS");
+    console.log("PASS: Test 1");
 } else {
-    console.log("Test 1 FAIL");
+    console.log("FAIL: Test 1");
     console.log("Expected:", twentyLeaguesOut);
     console.log("Received:", test1result);
 }
@@ -83,9 +78,9 @@ if (JSON.stringify(twentyLeaguesOut) === JSON.stringify(test1result)) {
 /** We could choose to check that we get the right number of results. */
 const test2result = findSearchTermInBooks("the", twentyLeaguesIn); 
 if (test2result.Results.length == 1) {
-    console.log("Test 2 SUCCESS");
+    console.log("PASS: Test 2");
 } else {
-    console.log("Test 2 FAIL");
+    console.log("FAIL: Test 2");
     console.log("Expected:", twentyLeaguesOut.Results.length);
     console.log("Received:", test2result.Results.length);
 }
