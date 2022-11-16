@@ -2,10 +2,9 @@
 
 Included in this repository are files to support candidates applying for software engineering roles through the GSA's US Digital Corps program. 
 
-There are four files in this repository:
+There are three files in this repository we would like you to focus on:
 
 1. This README.
-1. A `.gitignore` file, that you can ignore.
 1. `tester.html`: An HTML file that will run your code.
 1. `book_search.js`: A JavaScript source code file that you should edit for your inverview submission.
 
