@@ -10,7 +10,7 @@ There are three files in this repository we would like you to focus on:
 
 ## Testing your code
 
-You will need to test your code in a browser and see the output in the web developer console. Here is documentation for opening the web developer tools for Firefox:
+You will need to open the file `tester.html` in a browser to run the code that is contained in `book_search.js`. The output from running that code will appear in the browser's web developer console. Here is documentation for opening the web developer tools for Firefox:
 
 https://firefox-source-docs.mozilla.org/devtools-user/browser_console/index.html#:~:text=You%20can%20open%20the%20Browser,%2B%20J%20on%20a%20Mac
 
@@ -19,6 +19,8 @@ And here are the instructions for Google Chrome:
 https://developer.chrome.com/docs/devtools/open/
 
 Either should work; we tested under both on Mac and Linux.
+
+You will submit both the HTML and JavaScript files when you are done. You should not need to edit `tester.html`. We expect all of your work to appear in the file `book_search.js`. 
 
 ## Submission
 
