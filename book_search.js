@@ -1,9 +1,11 @@
 /** 
  * RECOMMENDATION
  * 
- * To test your code, we recommend opening this file in a web browser.
- * You can then use the "Developer Tools" to see the Javascript console.
- * There, you will see the results of the tests executing.
+ * To test your code, you can "tester.html" a web browser.
+ * You can then use the "Developer Tools" to see the JavaScript console.
+ * There, you will see the results unit test execution. You are welcome
+ * to run the code any way you like, but this is similar to how we will
+ * run your code submission.
  * 
  * The Developer Tools in Chrome are available under the "..." menu, 
  * futher hidden under the option "More Tools." In Firefox, they are 
@@ -64,6 +66,22 @@ const twentyLeaguesOut = {
         }
     ]
 }
+
+/*
+ _   _ _   _ ___ _____   _____ _____ ____ _____ ____  
+| | | | \ | |_ _|_   _| |_   _| ____/ ___|_   _/ ___| 
+| | | |  \| || |  | |     | | |  _| \___ \ | | \___ \ 
+| |_| | |\  || |  | |     | | | |___ ___) || |  ___) |
+ \___/|_| \_|___| |_|     |_| |_____|____/ |_| |____/ 
+                                                      
+ */
+
+/* We have provided two unit tests. They're really just `if` statements that 
+ * output to the console. We've provided two tests as examples, and 
+ * they should pass with a correct implementation of `findSearchTermInBooks`. 
+ * 
+ * Please add your unit tests below.
+ * */
 
 /** We can check that, given a known input, we get a known output. */
 const test1result = findSearchTermInBooks("the", twentyLeaguesIn);
