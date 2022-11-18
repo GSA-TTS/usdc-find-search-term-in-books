@@ -1,7 +1,7 @@
 /** 
  * RECOMMENDATION
  * 
- * To test your code, you can "tester.html" a web browser.
+ * To test your code, you should open "tester.html" in a web browser.
  * You can then use the "Developer Tools" to see the JavaScript console.
  * There, you will see the results unit test execution. You are welcome
  * to run the code any way you like, but this is similar to how we will
