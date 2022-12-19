@@ -1,12 +1,12 @@
 # findSearchTermInBooks
 
-Included in this repository are files to support candidates applying for software engineering roles through the GSA's US Digital Corps program. 
+Included in this repository are files to support candidates applying for software engineering roles through the GSA's U.S. Digital Corps program. 
 
 There are three files in this repository we would like you to focus on:
 
 1. This README.
 1. `tester.html`: An HTML file that will run your code.
-1. `book_search.js`: A JavaScript source code file that you should edit for your inverview submission.
+1. `book_search.js`: A JavaScript source code file that you should edit for your assessment submission.
 
 ## Testing your code
 
@@ -26,14 +26,14 @@ You will submit both the HTML and JavaScript files when you are done. You should
 
 Directions for submission are in the prompt. As a reminder, you should commit your code to a repository called
 
-*firstnamelastname*-usdc-2022
+*firstnamelastname*-usdc-2023
 
 If you were remarkable technologists of years past, you might name your repository
 
-`otisboykin-usdc-2022`
+`otisboykin-usdc-2023`
 
 or 
 
-`mariebrown-usdc-2022`
+`mariebrown-usdc-2023`
 
 You, of course, should name your repository for the remarkable technologist of civic tech's future that you are.
