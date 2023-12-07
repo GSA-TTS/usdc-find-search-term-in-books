@@ -136,8 +136,8 @@ if (test4result.Results.length === 0) {
     console.log("Expected 0 results for 'nonexistent', Received:", test4result.Results.length);
 }
 // Case-sensitive Tests
-console.log("Test 5: Case-sensitive search for 'Cat'");
-const test5result = findSearchTermInBooks("Cat", twentyLeaguesIn);
+console.log("Test 5: Case-sensitive search for 'Eyes'");
+const test5result = findSearchTermInBooks("Eyes", twentyLeaguesIn);
 if (test5result.Results.length === 0) {
     console.log("PASS: Test 5");
 } else {
