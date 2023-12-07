@@ -19,35 +19,25 @@
  * @returns {JSON} - Search results.
  * */
 function findSearchTermInBooks(searchTerm, scannedTextObj) {
-    /** You will need to implement your search and
-     * return the appropriate object here. */
-    // Loop through each book in the list
-    // For each book,loop through the content
-    // check contet text for search term
-    // if match, add to result (ISBN, page, line)
-
-    /* Ruby equivalent:
-    def findSearchTermInBooks(search_term, books)
-    result = {"SearchTerm" => search_term, "Results" => []}
-
-    books.each do |book|
-        book["Content"].each do |content|
-        if content["Text"].include?(search_term)
-            result["Results"] << {"ISBN" => book["ISBN"], "Page" => content["Page"], "Line" => content["Line"]}
-        end
-        end
-    end
-
-    return result
-    end
-    */
-
-
-
     var result = {
         "SearchTerm": "",
         "Results": []
     };
+    // Loop through each book in the list
+    scannedTextObj.forEach(book => {
+        // For each book, loop through the content
+        book.Content.forEach(content => {
+            // Check content text for the search term
+            if (content.Text.includes(searchTerm)) {
+                // If a match is found, add to result (ISBN, page, line)
+                result.Results.push({
+                    "ISBN": book.ISBN,
+                    "Page": content.Page,
+                    "Line": content.Line
+                });
+            }
+        });
+    });
 
     return result;
 }
