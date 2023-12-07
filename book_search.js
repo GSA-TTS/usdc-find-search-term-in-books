@@ -114,3 +114,53 @@ if (test2result.Results.length == 1) {
     console.log("Expected:", twentyLeaguesOut.Results.length);
     console.log("Received:", test2result.Results.length);
 }
+
+// Positive Tests
+console.log("Test 3: Searching for 'momentum'");
+const test3result = findSearchTermInBooks("momentum", twentyLeaguesIn);
+if (test3result.Results.length === 1 && test3result.Results[0].Page === 31 && test3result.Results[0].Line === 8) {
+    console.log("PASS: Test 3");
+} else {
+    console.log("FAIL: Test 3");
+    console.log("Expected 1 result for 'momentum' on Page 31, Line 8, Received:", test3result.Results);
+}
+
+
+// Negative Tests
+console.log("Test 4: Searching for a term not in the book");
+const test4result = findSearchTermInBooks("nonexistent", twentyLeaguesIn);
+if (test4result.Results.length === 0) {
+    console.log("PASS: Test 4");
+} else {
+    console.log("FAIL: Test 4");
+    console.log("Expected 0 results for 'nonexistent', Received:", test4result.Results.length);
+}
+// Case-sensitive Tests
+console.log("Test 5: Case-sensitive search for 'The'");
+const test5result = findSearchTermInBooks("The", twentyLeaguesIn);
+if (test5result.Results.length === 0) {
+    console.log("PASS: Test 5");
+} else {
+    console.log("FAIL: Test 5");
+    console.log("Expected 0 results for 'The', Received:", test5result.Results.length);
+}
+
+// Empty Search Term Tests
+console.log("Test 6: Searching within an empty book list");
+const test6result = findSearchTermInBooks("the", []);
+if (test6result.Results.length === 0) {
+    console.log("PASS: Test 6");
+} else {
+    console.log("FAIL: Test 6");
+    console.log("Expected 0 results, Received:", test6result.Results.length);
+}
+
+// Book without content
+console.log("Test 7: Searching in a book with no content");
+const test7result = findSearchTermInBooks("the", [{ "Title": "Empty Book", "ISBN": "0000000000", "Content": [] }]);
+if (test7result.Results.length === 0) {
+    console.log("PASS: Test 7");
+} else {
+    console.log("FAIL: Test 7");
+    console.log("Expected 0 results, Received:", test7result.Results.length);
+}
