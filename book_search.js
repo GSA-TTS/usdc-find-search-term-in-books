@@ -20,7 +20,7 @@
  * */
 function findSearchTermInBooks(searchTerm, scannedTextObj) {
     var result = {
-        "SearchTerm": "",
+        "SearchTerm": searchTerm,
         "Results": []
     };
     // Loop through each book in the list
